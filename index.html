@@ -17,21 +17,27 @@
         .container {
             text-align: center;
         }
-        .container img {
+        .container img.logo {
             max-width: 150px; /* Adjust size as needed */
             margin-bottom: 20px; /* Space between the logo and heading */
         }
         .container h1 {
             font-size: 2.5rem;
             color: #333;
+            margin-bottom: 20px; /* Space between heading and construction image */
+        }
+        .container .construction-image {
+            width: 100%; /* Initially set width to 100% of its container */
+            max-width: 600px; /* Set a max width if necessary */
+            height: auto; /* Maintain aspect ratio */
         }
         .container p {
             font-size: 1.2rem;
             color: #666;
         }
         .social-icons img {
-            width: 30px; /* Set fixed width for consistency */
-            height: 30px; /* Set fixed height for consistency */
+            width: 35px; /* Set fixed width for consistency */
+            height: 35px; /* Set fixed height for consistency */
             margin: 0 10px; /* Space between the social icons */
             vertical-align: middle;
         }
@@ -39,16 +45,17 @@
 </head>
 <body>
     <div class="container">
-        <img src="cCDAO_logo_wide.png" alt="Logo"> <!-- Reference to the local logo file -->
+        <img class="logo" src="cCDAO_logo_wide.png" alt="Logo"> <!-- Reference to the local logo file -->
         <h1>We're Under Construction</h1>
+        <img class="construction-image" src="construction.png" alt="Under Construction"> <!-- Reference to the local construction image file -->
         <p>Our website is currently under construction. We'll be here soon with our new site.</p>
         <p>In the meantime, join us on:</p>
         <p class="social-icons">
             <a href="https://discord.gg/3CB4dseVRw" target="_blank">
-                <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png" alt="Discord">
+                <img src="discord.svg" alt="Discord"> <!-- Reference to the local discord SVG file -->
             </a>
             <a href="https://x.com/cCDAO_space" target="_blank">
-                <img src="https://abs.twimg.com/favicons/twitter.2.ico" alt="Twitter">
+                <img src="twitter.svg" alt="Twitter"> <!-- Reference to the local twitter SVG file -->
             </a>
         </p>
     </div>
