@@ -8,23 +8,29 @@
         body {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start; /* Align items at the top */
+            min-height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
+            overflow-x: hidden; /* Prevent horizontal overflow */
         }
         .container {
             text-align: center;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in the element's total width and height */
         }
         .container img.logo {
             max-width: 180px; /* Adjust size as needed */
-            margin-bottom: 10px; /* Reduced space between the logo and heading */
+            width: 180px;
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Space between the logo and heading */
         }
         .container h1 {
             font-size: 2.5rem;
             color: #333;
-            margin-bottom: 15px; /* Reduced space between heading and construction image */
+            margin-bottom: 15px; /* Space between heading and construction image */
         }
         .container .construction-image {
             width: 100%; /* Initially set width to 100% of its container */
@@ -37,8 +43,8 @@
             margin: 10px 0; /* Adjust spacing for paragraphs */
         }
         .social-icons img {
-            width: 33px; /* Set fixed width for consistency */
-            height: 33px; /* Set fixed height for consistency */
+            width: 32px; /* Set fixed width for consistency */
+            height: 32px; /* Set fixed height for consistency */
             margin: 0 10px; /* Space between the social icons */
             vertical-align: middle;
         }
